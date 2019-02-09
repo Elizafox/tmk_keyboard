@@ -127,7 +127,7 @@ const uint8_t PROGMEM fn_keycode[] = {
 
 
 const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-    /* 0: default
+    /* Custom
      * 
      *               ,-----------------------------------------------.
      *               |F13|F14|F15|F16|F17|F18|F19|F20|F21|F22|F23|F24|
@@ -136,39 +136,26 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *               |F1 |F2 |F3 |F4 |F5 |F6 |F7 |F8 |F9 |F10|F11|F12|
      *               `-----------------------------------------------' 
      * ,-------. ,-----------------------------------------------------------. ,-----------. ,---------------.
-     * |PrS|Esc| |  `|  1|  2|  3|  4|  5|  6|  7|  8|  9|  0|  -|  =|  \|BS | |Ins|Hom|PgU| |NmL|  /|  *|  -|
+     * |Esc|PrS| |  `|  1|  2|  3|  4|  5|  6|  7|  8|  9|  0|  -|  =|Backspa| |Ins|Hom|PgU| |NmL|  /|  *|  -|
      * |-------| |-----------------------------------------------------------| |-----------| |---------------|
-     * |ScL|In4| |Tab  |  Q|  W|  E|  R|  T|  Y|  U|  I|  O|  P|  [|  ]|    \| |Del|End|PgD| |  7|  8|  9|   |
-     * |-------| |-----------------------------------------------------------| `-----------' |-----------|  +|
-     * |Pau|In5| |CapsLo|  A|  S|  D|  F|  G|  H|  J|  K|  L|  ;|  '|  #|Retu|     |Up |     |  4|  5|  6|   |
+     * |Out|Cut| |Tab  |  Q|  W|  E|  R|  T|  Y|  U|  I|  O|  P|  [|  ]|     | |Del|End|PgD| |  7|  8|  9|  +|
+     * |-------| |----------------------------------------------------- |Retu| `-----------' |-----------|---|
+     * |Opr|Cpy| |CapsLo|  A|  S|  D|  F|  G|  H|  J|  K|  L|  ;|  '|  \|    |     |Up |     |  4|  5|  6|  =|
      * |-------| |-----------------------------------------------------------| ,-----------. |---------------|
-     * |App|In6| |Shif|  \|  Z|  X|  C|  V|  B|  N|  M|  ,|  ,|  /|Shift     | |Lef|In2|Rig| |  1|  2|  3|   |
+     * |Exe|Pas| |Shif|ExS|  Z|  X|  C|  V|  B|  N|  M|  ,|  .|  /|Shift     | |Lef|Tab|Rig| |  1|  2|  3|   |
      * |-------| |-----------------------------------------------------------| `-----------' |-----------|Ent|
      * |Gui|Gui| |Ctrl|    |Alt |          Space              |Alt |    |Ctrl|     |Dow|     |      0|  .|   |
      * `-------' `----'    `---------------------------------------'    `----'     `---'     `---------------'
      */
-/*
     KEYMAP(
                      F13, F14, F15, F16, F17, F18, F19, F20, F21, F22, F23, F24,
                      F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12,
 
-    PSCR,ESC,   GRV, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, JYEN,BSPC,  INS, HOME,PGUP,  NLCK,PSLS,PAST,PMNS,
-    SLCK,INT4,  TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,     BSLS,  DEL, END, PGDN,  P7,  P8,  P9,  PPLS,
-    PAUS,INT5,  CAPS,A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,     NUHS,ENT,        UP,         P4,  P5,  P6,  PCMM,
-    APP, INT6,  LSFT,NUBS,Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,     RO,  RSFT,  LEFT,INT2,RGHT,  P1,  P2,  P3,  PENT,
-    RGUI,LGUI,  LCTL,     LALT,               SPC,                          RALT,     RCTL,       DOWN,       NO,  P0,  PDOT,NO
-    ),
-*/
-    // pseudo ANSI
-    KEYMAP(
-                     F13, F14, F15, F16, F17, F18, F19, F20, F21, F22, F23, F24,
-                     F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12,
-
-    PSCR,ESC,   ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, NO,  BSPC,  INS, HOME,PGUP,  NLCK,PSLS,PAST,PMNS,
-    SLCK,INT4,  TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,     NO,    DEL, END, PGDN,  P7,  P8,  P9,  PPLS,
-    PAUS,INT5,  LCTL,A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,     BSLS,ENT,        UP,         P4,  P5,  P6,  PCMM,
-    APP, INT6,  LSFT,LSFT,Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,     NO,  RSFT,  LEFT,INT2,RGHT,  P1,  P2,  P3,  PENT,
-    RGUI,LGUI,  LCTL,     LALT,               SPC,                          LGUI,     GRV,        DOWN,       NO,  P0,  PDOT,NO
+    ESC,    PSCR,  GRV,  1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, NO,  BSPC,  INS, HOME,PGUP,  NLCK,PSLS,PAST,PMNS,
+    OUT,    CUT,   TAB,  Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,     NO,    DEL, END, PGDN,  P7,  P8,  P9,  PPLS,
+    OPER,   COPY,  CAPS, A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,BSLS,     ENT,        UP,         P4,  P5,  P6,  PEQL,
+    EXECUTE,PASTE, LSFT,EXSEL,Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,     NO,  RSFT,  LEFT,TAB,RGHT,   P1,  P2,  P3,  PENT,
+    RGUI,   LGUI,  LCTL,      LALT,               SPC,                          RALT,     RCTL,       DOWN,       NO,  P0,  PDOT,NO
     ),
 
 /* 101-key keymaps
