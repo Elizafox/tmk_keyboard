@@ -1,10 +1,17 @@
 Keyboard converter for IBM terminal keyboard
 ============================================
 It supports PS/2 Scan Code Set 3 and runs on USB AVR chips such like PJRC Teensy.
-I tested the converter on ATMega32U4 with 1392595(102keys) and 6110345(122keys).
 
 Source code: https://github.com/tmk/tmk_keyboard
 Article: http://geekhack.org/index.php?topic=27272.0
+
+NOTES
+-----
+This has been modified to work with the Unicomp Terminal 122-3270 (though it
+should also work with the 5250). This is my preferred layout.
+
+The Makefile has been modified for the built firmware to work with Hasu's
+pre-built PS/2 to USB converter.
 
 
 CONNECTION
