@@ -144,7 +144,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |-------| |-----------------------------------------------------------| ,-----------. |---------------|
      * |Sel|Pas| |Shif|ExS|  Z|  X|  C|  V|  B|  N|  M|  ,|  .|  /|Shift     | |Lef|Tab|Rig| |  1|  2|  3|   |
      * |-------| |-----------------------------------------------------------| `-----------' |-----------|Ent|
-     * |Fnd|Gui| |Ctrl|    |Alt |          Space              |Alt |    |Ctrl|     |Dow|     |      0|  .|   |
+     * |Fnd|Out| |Gui |    |Alt |          Space              |Alt |    |Ctrl|     |Dow|     |      0|  .|   |
      * `-------' `----'    `---------------------------------------'    `----'     `---'     `---------------'
      */
     KEYMAP(
@@ -155,7 +155,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     AGAIN, CUT,   TAB,  Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,     NO,    DEL, END, PGDN,  P7,  P8,  P9,  PPLS,
     UNDO,  COPY,  CAPS, A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,BSLS,     ENT,        UP,         P4,  P5,  P6,  PEQL,
     SELECT,PASTE, LSFT,EXSEL,Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,     NO,  RSFT,  LEFT,TAB,RGHT,   P1,  P2,  P3,  PENT,
-    FIND,  LGUI,  LCTL,      LALT,               SPC,                          RALT,     RCTL,       DOWN,       NO,  P0,  PDOT,NO
+    FIND,  OUT,   LGUI,      LALT,               SPC,                          RALT,     RCTL,       DOWN,       NO,  P0,  PDOT,NO
     ),
 
 /* 101-key keymaps
