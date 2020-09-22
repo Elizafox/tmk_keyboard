@@ -132,9 +132,9 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |-------| |-----------------------------------------------------------| |-----------| |---------------|
      * |Agn|Cut| |Tab  |  Q|  W|  E|  R|  T|  Y|  U|  I|  O|  P|  [|  ]|     | |Del|End|PgD| |  7|  8|  9|  +|
      * |-------| |----------------------------------------------------- |Retu| `-----------' |-----------|---|
-     * |Und|Cpy| |Out   |  A|  S|  D|  F|  G|  H|  J|  K|  L|  ;|  '|  \|    |     |Up |     |  4|  5|  6|  =|
+     * |Und|Cpy| |Caps  |  A|  S|  D|  F|  G|  H|  J|  K|  L|  ;|  '|  \|    |     |Up |     |  4|  5|  6|  =|
      * |-------| |-----------------------------------------------------------| ,-----------. |---------------|
-     * |Sel|Pas| |Shif|Cap|  Z|  X|  C|  V|  B|  N|  M|  ,|  .|  /|Shift     | |Lef|Tab|Rig| |  1|  2|  3|   |
+     * |Sel|Pas| |Shif|Pau|  Z|  X|  C|  V|  B|  N|  M|  ,|  .|  /|Shift     | |Lef|Tab|Rig| |  1|  2|  3|   |
      * |-------| |-----------------------------------------------------------| `-----------' |-----------|Ent|
      * |Fnd|Gui| |Ctrl|    |Alt |          Space              |Alt |    |Ctrl|     |Dow|     |      0|  .|   |
      * `-------' `----'    `---------------------------------------'    `----'     `---'     `---------------'
@@ -145,8 +145,8 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     ESC,   PSCR,  GRV,  1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, NO,  BSPC,  INS, HOME,PGUP,  NLCK,PSLS,PAST,PMNS,
     AGAIN, CUT,   TAB,  Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,     NO,    DEL, END, PGDN,  P7,  P8,  P9,  PPLS,
-    UNDO,  COPY,  OUT , A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,BSLS,     ENT,        UP,         P4,  P5,  P6,  PEQL,
-    SELECT,PASTE, LSFT, CAPS,Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,     NO,  RSFT,  LEFT,TAB,RGHT,   P1,  P2,  P3,  PENT,
+    UNDO,  COPY,  CAPS, A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,BSLS,     ENT,        UP,         P4,  P5,  P6,  PEQL,
+    SELECT,PASTE, LSFT,PAUSE,Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,     NO,  RSFT,  LEFT,TAB,RGHT,   P1,  P2,  P3,  PENT,
     FIND,  LGUI,  LCTRL,     LALT,               SPC,                          RALT,     RCTL,       DOWN,       NO,  P0,  PDOT,NO
     ),
 
