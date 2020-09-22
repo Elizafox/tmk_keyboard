@@ -122,7 +122,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Custom
      * 
      *               ,-----------------------------------------------.
-     *               |F13|F14|F15|F16|Gui|Gui|Prv|Ply|Nxt|Mut|VoD|VoU|
+     *               |F13|F14|F15|App|Gui|Gui|Prv|Ply|Nxt|Mut|VoD|VoU|
      *               `-----------------------------------------------' 
      *               ,-----------------------------------------------.
      *               |F1 |F2 |F3 |F4 |F5 |F6 |F7 |F8 |F9 |F10|F11|F12|
@@ -140,7 +140,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * `-------' `----'    `---------------------------------------'    `----'     `---'     `---------------'
      */
     KEYMAP(
-                     F13, F14, F15, F16, LGUI,RGUI,MPRV,MPLY,MNXT, MUTE,VOLD,VOLU,
+                     F13, F14, F15, APP, LGUI,RGUI,MPRV,MPLY,MNXT, MUTE,VOLD,VOLU,
                      F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12,
 
     ESC,   PSCR,  GRV,  1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, NO,  BSPC,  INS, HOME,PGUP,  NLCK,PSLS,PAST,PMNS,
