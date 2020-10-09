@@ -140,14 +140,14 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * `-------' `----'    `---------------------------------------'    `----'     `---'     `---------------'
      */
     KEYMAP(
-                     F13, F14, F15, APP, LGUI,RGUI,MPRV,MPLY,MNXT, MUTE,VOLD,VOLU,
-                     F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12,
+                            F13,   F14,   F15,   APP,   LGUI,  RGUI,  MPRV,  MPLY,  MNXT,  MUTE,  VOLD,  VOLU,
+                            F1,    F2,    F3,    F4,    F5,    F6,    F7,    F8,    F9,    F10,   F11,   F12,
 
-    ESC,   PSCR,  GRV,  1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, NO,  BSPC,  INS, HOME,PGUP,  NLCK,PSLS,PAST,PMNS,
-    AGAIN, CUT,   TAB,  Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,     NO,    DEL, END, PGDN,  P7,  P8,  P9,  PPLS,
-    UNDO,  COPY,  CAPS, A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,BSLS,     ENT,        UP,         P4,  P5,  P6,  PEQL,
-    SELECT,PASTE, LSFT,PAUSE,Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,     NO,  RSFT,  LEFT,TAB,RGHT,   P1,  P2,  P3,  PENT,
-    FIND,  LGUI,  LCTRL,     LALT,               SPC,                          RALT,     RCTL,       DOWN,       NO,  P0,  PDOT,NO
+    ESC,    PSCR,    GRV,   1,     2,     3,     4,     5,     6,     7,     8  ,   9,     0,     MINS,  EQL, NO, BSPC,  INS,  HOME, PGUP,   NLCK, PSLS, PAST, PMNS,
+    AGAIN,  CUT,     TAB,   Q,     W,     E,     R,     T,     Y,     U,     I,     O,     P,     LBRC,  RBRC,    NO,    DEL,  END,  PGDN,   P7,   P8,   P9,   PPLS,
+    UNDO,   COPY,    CAPS,  A,     S,     D,     F,     G,     H,     J,     K,     L,     SCLN,  QUOT,  BSLS,    ENT,         UP,           P4,   P5,   P6,   PEQL,
+    SELECT, PASTE,   LSFT,  PAUSE, Z,     X,     C,     V,     B,     N,     M,     COMM,  DOT,   SLSH,  NO,      RSFT,  LEFT, TAB, RGHT,    P1,   P2,   P3,   PENT,
+    FIND,   LGUI,    LCTRL,        LALT,                           SPC,                           RALT,           RCTL,        DOWN,         NO,   P0,   PDOT, NO
     ),
 
 #if 0
